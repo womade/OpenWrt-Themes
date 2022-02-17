@@ -8,7 +8,7 @@ include $(TOPDIR)/rules.mk
 LUCI_TITLE:=SuperNet Theme
 LUCI_DEPENDS:=
 LUCI_PKGARCH:=all
-PKG_RELEASE:=3
+PKG_RELEASE:=5
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
