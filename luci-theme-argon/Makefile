@@ -1,7 +1,5 @@
 #
-# Copyright (C) 2008-2019 Jerrykuku
-#
-# This is free software, licensed under the Apache License, Version 2.0 .
+# 中國遠徵
 #
 
 include $(TOPDIR)/rules.mk

@@ -1,8 +1,13 @@
+<%#
+	中國遠徵
+-%>
+
 <% local ver = require "luci.version" %>
 </div>
 <footer>
 	<div>
-		<a class="luci-link" href="https://i.ssss.fun">Copyright © 1998 - <script>document.write(new Date().getFullYear());</script> 中國遠徵 All Rights Reserved</a> /
+		<a class="luci-link" href="https://github.com/openwrt/luci">Powered by <%= ver.luciname %> (<%= ver.luciversion %>)</a> /
+						<a href="https://i.ssss.fun">中國遠徵 <%# vPKG_VERSION %></a> /
 						<%= ver.distversion %>
 		<ul class="breadcrumb pull-right" id="modemenu" style="display:none"></ul>
 	</div>
@@ -10,6 +15,7 @@
 </div>
 </div>
 <script>
+	// thanks for Jo-Philipp Wich <jow@openwrt.org>
 	var luciLocation = <%= luci.http.write_json(luci.dispatcher.context.path) %>;
 	var winHeight = $(window).height();
 	$(window).resize(function () {
