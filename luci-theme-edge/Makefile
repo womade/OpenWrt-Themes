@@ -6,7 +6,7 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=Edge_new kenzo
+LUCI_TITLE:=Edge by Yuanzheng
 LUCI_DEPENDS:=
 PKG_VERSION:=2.4
 PKG_RELEASE:=20201128
