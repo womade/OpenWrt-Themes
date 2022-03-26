@@ -205,7 +205,7 @@
 			 if #childs > 0 then
 			 for i, r in ipairs(childs) do
 			 local nnode = cattree.nodes[r]
-			 local href  = controller .. "/" .. category .. "/" .. r ..
+			 local href  = controller .. "" .. category .. "/" .. r ..
 			 (nnode.query and http.build_querystring(k.query) or "")
 			 local grandchildren = disp.node_childs(nnode)
 
@@ -213,7 +213,7 @@
 			 %>
 			 <li class="slide">
 				 <a class="menu" data-title="<%=pcdata(striptags(nnode.title))%>" href="#"><%=pcdata(striptags(translate(nnode.title)))%></a>
-				 <%- submenu("/" .. category .. "/" .. r .. "/", nnode) %>
+				 <%- submenu("" .. category .. "/" .. r .. "/", nnode) %>
 			 </li>
 			 <%          else %>
 			 <li class="slide">
